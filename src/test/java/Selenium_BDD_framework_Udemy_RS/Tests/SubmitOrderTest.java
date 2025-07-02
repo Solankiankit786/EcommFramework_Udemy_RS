@@ -20,7 +20,7 @@ public class SubmitOrderTest extends BaseTest {
 	@Test(dataProvider = "getData",groups = "Purchase",retryAnalyzer = Selenium_BDD_framework_CICD_Udemy_RS.TestComponents.Retry.class)
 	public void SubmitOrder(HashMap<String, String> map) throws InterruptedException, IOException
 	{
-		
+		//New comments are added in the Selenium Project
 		CataloguePage cp =lp.loginApplication(map.get("emailId"),map.get("password"));
 		cp.AddToCart(map.get("item"));
 		CartPage cartpage =cp.goToCartPage();
